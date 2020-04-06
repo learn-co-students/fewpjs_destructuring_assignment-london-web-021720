@@ -78,6 +78,8 @@ describe("index.js", () => {
   })
   
   it("Object: uses destructuring to assign Kermit's color, songs 2 and 4, and Kermit's job and partner", () => {
+    expect(k_color).to.exist
+    expect(k_color).to.equal("green")
     expect(song_2).to.exist
     expect(song_2).to.equal("Moving Right Along")
     expect(song_4).to.exist
